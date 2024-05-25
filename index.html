@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>api-project</title>
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm navbar-light fixed-top bg-black-transpaent">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link">pizza</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">hamburger</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">popcorn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">pasta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">seafood</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">ice cream</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">blueberry</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <header class="vh-100 d-flex flex-wrap align-items-end justify-content-center position-relative">
+    <h1 class="w-100 text-white font-weight-bolder text-center">
+      Never Miss a Recipe!
+    </h1>
+
+    <div class="searchInput w-75 m-auto p-5">
+      <div class="row no-gutters">
+        <div class="col-md-10">
+          <input id="searchInput" placeholder="search recipes" class="form-control" type="text" />
+        </div>
+        <div class="col-md-2">
+          <button id="searchBtn" class="btn btn-block text-white btn-mine">
+            search
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container py-5">
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Recipe Details</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div id="RecipeData" class="modal-body">
+            
+          </div>
+         
+        </div>
+      </div>
+    </div>
+    <h1 class="text-center">Recipe Categories</h1>
+    <div id="rowData" class="row">
+
+    </div>
+  </div>
+
+
+
+  <script src="JS/main.js"></script>
+  <script src="JS/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+<html>
